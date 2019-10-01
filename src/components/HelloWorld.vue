@@ -98,13 +98,10 @@ export default {
     msg: String,
   },
   data() {
-    return {
-    }
+    return {};
   },
-  methods: {
-  },
-  mounted() {
-  }
+  methods: {},
+  mounted() {},
 };
 </script>
 

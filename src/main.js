@@ -8,8 +8,10 @@ import ElementUI from 'element-ui';
 Vue.use(ElementUI);
 import Global from '@/utils/global';
 Vue.use(Global);
-import directive from '@/directive';
-Vue.use(directive);
+import directives from '@/directives';
+Vue.use(directives);
+import filters from '@/filters';
+Vue.use(filters);
 
 Vue.config.productionTip = false;
 
