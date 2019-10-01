@@ -97,12 +97,14 @@ export default {
   props: {
     msg: String,
   },
-  methods: {
-    aaa() {
-      console.log(123);
-      let a = { name: 2, age: 223 };
-    },
+  data() {
+    return {
+    }
   },
+  methods: {
+  },
+  mounted() {
+  }
 };
 </script>
 
