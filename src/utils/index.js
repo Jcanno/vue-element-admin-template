@@ -5,15 +5,15 @@
  * @returns {function} fn
  */
 export const throttle = function(fn, wait) {
-  let prev = new Date();
-  return function() {
-    const args = arguments;
-    const now = new Date();
-    if (now - prev > wait) {
-      fn.apply(self, args);
-      prev = new Date();
-    }
-  };
+	let prev = new Date();
+	return function() {
+		const args = arguments;
+		const now = new Date();
+		if (now - prev > wait) {
+			fn.apply(self, args);
+			prev = new Date();
+		}
+	};
 };
 
 /**
@@ -23,11 +23,11 @@ export const throttle = function(fn, wait) {
  * @returns {function} fn
  */
 export const debounce = function(fn, wait) {
-  let timer;
-  return function() {
-    if (timer) clearTimeout(timer);
-    timer = setTimeout(() => {
-      fn.apply(this, arguments);
-    }, wait);
-  };
+	let timer;
+	return function() {
+		if (timer) clearTimeout(timer);
+		timer = setTimeout(() => {
+			fn.apply(this, arguments);
+		}, wait);
+	};
 };

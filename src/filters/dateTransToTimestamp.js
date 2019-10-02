@@ -5,7 +5,7 @@ import moment from 'moment';
  * @param {string} datestr - 日期字符串
  */
 const DateTransToTimestamp = datestr => {
-  return parseInt(moment(datestr).valueOf() / 1000);
+	return parseInt(moment(datestr).valueOf() / 1000);
 };
 
 export default DateTransToTimestamp;

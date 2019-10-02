@@ -8,11 +8,11 @@ import axios from '../../utils/request';
  * @returns {Promise}
  */
 export const getLoginFirstExample = params => {
-  return axios.request({
-    url: `login`,
-    method: 'get',
-    params
-  });
+	return axios.request({
+		url: `login`,
+		method: 'get',
+		params
+	});
 };
 
 /**
@@ -23,9 +23,9 @@ export const getLoginFirstExample = params => {
  * @returns {Promise}
  */
 export const postLoginSecondExample = data => {
-  return axios.request({
-    url: `login`,
-    method: 'post',
-    data
-  });
+	return axios.request({
+		url: `login`,
+		method: 'post',
+		data
+	});
 };
