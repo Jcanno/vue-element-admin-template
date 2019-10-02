@@ -24,9 +24,9 @@ class HttpRequest {
       baseURL: this.baseUrl,
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
-        Accept: 'application/json',
+        Accept: 'application/json'
       },
-      timeout: 60 * 1000,
+      timeout: 60 * 1000
     };
     return config;
   }
@@ -54,13 +54,13 @@ class HttpRequest {
         if (!errorInfo) {
           const {
             request: { statusText, data, status },
-            config,
+            config
           } = JSON.parse(JSON.stringify(error));
           errorInfo = {
             statusText,
             status,
             data,
-            request: { responseURL: config.url },
+            request: { responseURL: config.url }
           };
         }
         this.handleResponseStatus(errorInfo);
@@ -75,19 +75,19 @@ class HttpRequest {
       case 401:
         Message({
           message: '账号已过期,请重新登录',
-          type: 'error',
+          type: 'error'
         });
         break;
       case 500:
         Message({
           message: '服务器错误',
-          type: 'error',
+          type: 'error'
         });
         break;
       case 400:
         Message({
           message: data.message,
-          type: 'error',
+          type: 'error'
         });
         break;
     }

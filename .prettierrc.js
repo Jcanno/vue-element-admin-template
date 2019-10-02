@@ -1,5 +1,5 @@
 module.exports = {
-  trailingComma: 'es5',
+  trailingComma: 'none',
   // tab 两个空格
   tabWidth: 2,
   // 允许分号

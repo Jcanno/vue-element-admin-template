@@ -1,6 +1,6 @@
 /**
- * @description 验证小写
- * @param {string} str
+ * 验证小写
+ * @param {string} str - 字符串
  * @returns {Boolean}
  */
 export function validLowerCase(str) {
@@ -9,8 +9,8 @@ export function validLowerCase(str) {
 }
 
 /**
- * @description 验证大写
- * @param {string} str
+ * 验证大写
+ * @param {string} str - 字符串
  * @returns {Boolean}
  */
 export function validUpperCase(str) {
@@ -19,8 +19,8 @@ export function validUpperCase(str) {
 }
 
 /**
- * @description 验证邮箱
- * @param {string} email
+ * 验证邮箱
+ * @param {string} email - 字符串
  * @returns {Boolean}
  */
 export function validEmail(email) {
@@ -29,8 +29,8 @@ export function validEmail(email) {
 }
 
 /**
- * @description 验证身份证号
- * @param {string} idCard
+ * 验证身份证号
+ * @param {string} idCard - 字符串
  * @returns {Boolean}
  */
 export function validIdCard(idCard) {
@@ -39,8 +39,8 @@ export function validIdCard(idCard) {
 }
 
 /**
- * @description 验证字符串
- * @param {string} str
+ * 验证字符串
+ * @param {string} str - 字符串
  * @returns {Boolean}
  */
 export function isString(str) {
@@ -51,8 +51,8 @@ export function isString(str) {
 }
 
 /**
- * @description 验证银行卡号
- * @param {string} bankNum
+ * 验证银行卡号
+ * @param {string} bankNum - 字符串
  * @returns {Boolean}
  */
 export function isBankNumber(bankNum) {
@@ -61,8 +61,8 @@ export function isBankNumber(bankNum) {
 }
 
 /**
- * @description 验证手机号
- * @param {string} mobile
+ * 验证手机号
+ * @param {string} mobile - 字符串
  * @returns {Boolean}
  */
 export function isMobile(mobile) {
@@ -71,8 +71,8 @@ export function isMobile(mobile) {
 }
 
 /**
- * @description 验证数组
- * @param {Array} arg
+ * 验证数组
+ * @param {Array} arg - 数组
  * @returns {Boolean}
  */
 export function isArray(arg) {
