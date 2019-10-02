@@ -61,7 +61,6 @@
 				<a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a>
 			</li>
 		</ul>
-		<el-button type="primary" @click="s">s</el-button>
 	</div>
 </template>
 
@@ -78,11 +77,7 @@ export default {
 			}
 		};
 	},
-	methods: {
-		s() {
-			console.log(this.a);
-		}
-	},
+	methods: {},
 	mounted() {}
 };
 </script>
