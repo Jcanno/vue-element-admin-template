@@ -8,7 +8,8 @@
     "lint": "vue-cli-service lint",
     "format": "prettier --write \"src/**/*.js\" \"src/**/*.vue\"",
     "commit": "git-cz",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "lintcss": "stylelint 'src/**/*.scss' --fix"
   },
   "husky": {
     "hooks": {
@@ -16,10 +17,11 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,json,css,vue}": [
-     "prettier --write",
-     "eslint --fix",
-     "git add"
+    "src/**/*.{js,json,scss,vue}": [
+      "stylelint --fix",
+      "prettier --write",
+      "eslint --fix",
+      "git add"
     ]
   },
   "dependencies": {
@@ -47,6 +49,10 @@
     "node-sass": "^4.12.0",
     "prettier": "^1.18.2",
     "sass-loader": "^8.0.0",
+    "stylelint": "^11.0.0",
+    "stylelint-config-standard": "^19.0.0",
+    "stylelint-order": "^3.1.1",
+    "stylelint-scss": "^3.11.1",
     "vue-template-compiler": "^2.6.10"
   },
   "config": {
