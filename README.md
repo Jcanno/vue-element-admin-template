@@ -149,14 +149,14 @@ export const throttle = function(fn, wait) {
 ├── babel.config.js		// babel配置文件
 ├── package-lock.json
 ├── package.json		// 项目运行配置文件
-├── postcss.config.js	// postcss配置文件
+├── postcss.config.js		// postcss配置文件
 ├── .eslintignore		// git忽略文件
 ├── .eslintrc.js		// eslint配置文件
 ├── .prettierrc.js		// prettier配置文件
 ├── .stylelintrc.js		// stylelint配置文件
-├── src					// 源代码
+├── src				// 源代码
 │   ├── App.vue			// 根Vue文件
-│   ├── api				// 项目api文件,存放所有服务端接口
+│   ├── api			// 项目api文件,存放所有服务端接口
 │   ├── assets			// 静态资源文件
 │   ├── components		// Vue组件文件,存放所有被使用两个及以上的组件
 │   ├── directives		// Vue指令文件
