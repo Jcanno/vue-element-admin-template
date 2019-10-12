@@ -1,15 +1,5 @@
 <template>
-	<el-container class="container">
-		<siderbar class="siderbar" />
-		<el-container>
-			<el-header height>
-				<h1>我是头部</h1>
-			</el-header>
-			<el-main height>
-				<h1>我是内容</h1>
-			</el-main>
-		</el-container>
-	</el-container>
+	<Siderbar />
 </template>
 
 <script>
