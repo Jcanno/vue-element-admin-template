@@ -3,3 +3,9 @@
 	justify-content: $horizontal;
 	align-items: $vertical;
 }
+
+$font-weights: (
+	'regular': 400,
+	'medium': 500,
+	'bold': 700
+);
