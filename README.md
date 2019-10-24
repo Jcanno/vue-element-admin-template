@@ -122,7 +122,7 @@
 
 ### 1.2.2 CSS
 - 类名命名基于BEM(block, element, modifier)规范，全部为小写字母，连接线改为单横线，如：`btn(block)-text(element)-success(modifier)`
-- 可加上`g(global全局)、m(module模块)`等前缀来表示命名空间，如:`g(global)-btn(block)-text(element)-success(modifier)`
+- 可加上`g(global全局)、m(module模块)`等前缀来表示命名空间，如:`g(global)-btn(block)-text(element)success(modifier)`
 - 样式文件名使用`短横线(-)`命名,如`element-variables.scss`
 ##### **使用[stylelint](https://github.com/stylelint/stylelint/tree/master/lib/rules)来检查并修复css代码(并不是全部问题都能修复)**
 - 最大空行为1(自动修复)
@@ -148,7 +148,7 @@
 
 ### 1.2.4 注释
 采用[jsdoc](http://www.dba.cn/book/jsdoc/)注释规范，以下简单案例:
-```
+```javascript
 /**
  * 节流工具函数
  * @param {function} fn - 节流事件
@@ -180,7 +180,7 @@ export const throttle = function(fn, wait) {
 
 # 2.项目工程
 ## 2.1 技术选型
- - 编程语言  JavaScript
+- 编程语言  JavaScript
 - 样式  sass
 - 代码检查、格式化工具  eslint、prettier、stylelint
 - git提交信息工具  commitizen
@@ -229,7 +229,7 @@ export const throttle = function(fn, wait) {
 │       └── login.js
 ```
 #### 示例
-```
+```javascript
 src/api/User/login.js
 
 import axios from '@/utils/request';
@@ -260,7 +260,7 @@ export const getLoginFirstExample = params => {
 │   │   └── Example.vue
 ```
 #### 示例
-```
+```javascript
 src/components/Example/Example.vue
 
 <template>
@@ -299,7 +299,7 @@ export default {
 │   └── throttle.js
 ```
 #### 示例
-```
+```javascript
 src/directives/debounce.js
 
 import { debounce } from '@/utils';
@@ -327,7 +327,7 @@ export default {
 │   └── index.js
 ```
 #### 示例
-```
+```javascript
 src/filters/dateTransToTimestamp.js
 
 import moment from 'moment';
