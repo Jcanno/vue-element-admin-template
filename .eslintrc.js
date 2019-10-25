@@ -50,8 +50,7 @@ module.exports = {
     "key-spacing": [1, { 
       "beforeColon": false,
       "afterColon": true,
-      "mode": "minimum",
-      "align": "value"
+      "mode": "strict"
     }],
     // auto 强制使用 Unix 换行符
     "linebreak-style": [1, "unix"],
