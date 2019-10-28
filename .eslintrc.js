@@ -52,8 +52,6 @@ module.exports = {
       "afterColon": true,
       "mode": "strict"
     }],
-    // auto 强制使用 Unix 换行符
-    "linebreak-style": [1, "unix"],
     // 单文件最大行数
     "max-lines": [1, 1200],
     // 可以使用空格和tab混合缩进
