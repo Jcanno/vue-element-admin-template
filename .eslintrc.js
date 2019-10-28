@@ -98,8 +98,6 @@ module.exports = {
     "spaced-comment": [1, "always"],
     
     /** es6 rules */
-    // auto 箭头函数按需使用大括号
-    "arrow-body-style": [1, "as-needed"],
     // auto 当只有一个参数时允许省略圆括号
     "arrow-parens": [1, "as-needed"],
     // auto 箭头函数的箭头前后有空格
