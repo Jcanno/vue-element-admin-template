@@ -20,7 +20,7 @@ module.exports = {
     // auto 数组开闭括号始终统一,要么换行，要么不换行
     "array-bracket-newline": [1, { "multiline": true }],
     // auto 数组内需要空格
-    "array-bracket-spacing": ["error", "always", { 
+    "array-bracket-spacing": [1, "always", { 
       "singleValue": true,
       "objectsInArrays": false,
       "arraysInArrays": false
@@ -57,7 +57,7 @@ module.exports = {
     // 单文件最大行数
     "max-lines": [1, 1200],
     // 可以使用空格和tab混合缩进
-    "no-mixed-spaces-and-tabs": [1, "smart-tabs"],
+    "no-mixed-spaces-and-tabs": 0,
     // auto 最多一个空行
     "no-multiple-empty-lines": [1, { "max": 1, "maxEOF": 0 }],
     // auto 禁止行尾留空格，允许行尾注释

@@ -14,13 +14,13 @@ module.exports = {
 			filename: 'index.html'
 		}
 	},
-	//配置目录别名
+	// 配置目录别名
 	configureWebpack: {
 		name: '',
 		resolve: {
 			alias: {
 				'@': resolve('src'),
-				_c: resolve('src/components')
+				'_c': resolve('src/components')
 			}
 		}
 	},
