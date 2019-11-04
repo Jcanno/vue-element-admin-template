@@ -19,12 +19,8 @@ module.exports = {
     /** style rules */
     // auto 数组开闭括号始终统一,要么换行，要么不换行
     "array-bracket-newline": [1, { "multiline": true }],
-    // auto 数组内需要空格
-    "array-bracket-spacing": [1, "always", { 
-      "singleValue": true,
-      "objectsInArrays": false,
-      "arraysInArrays": false
-    }],
+    // auto 数组内不需要空格
+		"array-bracket-spacing": [1, "never"],
     // auto 大括号中不需要空格开始，空格结尾
     "block-spacing": [1, "never"],
     // auto 大括号与声明语句同一行
